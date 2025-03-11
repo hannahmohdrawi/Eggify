@@ -1,11 +1,11 @@
 body{
     background-color: #f3a750; 
+    font-family: 'Sour Gummy';
 }
 
 h1{
     text-align: center;
     font-size: 5rem;
-    font-family: 'Sour Gummy';
     margin-top: 10px;
 }
 
@@ -33,8 +33,9 @@ h1{
 /*Hiding the timerCountdown*/
 
 #timerContainer{
-    display: none;
+    display: none !important;
     text-align: center;
+    font-family: 'Sour Gummy';
 }
 
 
