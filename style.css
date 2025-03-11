@@ -30,7 +30,12 @@ h1{
     border-radius: 10px;
 }
 
+/*Hiding the timerCountdown*/
 
+#timerContainer{
+    display: none;
+    text-align: center;
+}
 
 
 

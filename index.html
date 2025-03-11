@@ -8,31 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Eggify</h1>
-<div class="container mt-5">
-    <div class="row">
-        <button class="col-md-6 grid-item">
-            <img src="images/boiled.jpg" alt="Boiled Egg">
-            Boiled
-        </button>
-        <button class="col-md-6 grid-item">
-            <img src="images/scrambled.webp" alt="Scrambled Egg">
-            Scrambled
-        </button>
+    <h1>Eggify</h1>
+    <div class="btnContainer mt-5">
+        <div class="row">
+            <button id="boiledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <img src="images/boiled.jpg" alt="Boiled Egg">
+                Boiled
+            </button>
+            <button id="scrambledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <img src="images/scrambled.webp" alt="Scrambled Egg">
+                Scrambled
+            </button>
+        </div>
+        <div class="row">
+            <button id="poachedBtn"class="col-md-6 grid-item" onclick="showTimer()">
+                <img src="images/poached.avif" alt="Poached Egg">
+                Poached
+            </button>
+            <button id="friedBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <img src="images/fried.jpg" alt="Fried Egg">
+                Fried
+            </button>
+        </div>
     </div>
-    <div class="row">
-        <button class="col-md-6 grid-item">
-            <img src="images/poached.avif" alt="Poached Egg">
-            Poached
-        </button>
-        <button class="col-md-6 grid-item">
-            <img src="images/fried.jpg" alt="Fried Egg">
-            Fried
-        </button>
-    </div>
-</div>
 
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="timerContainer" class="timer">
+        <div class="row">
+            <h2>Time Remaining</h2>
+            <p id="timerCountdown"></p>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
