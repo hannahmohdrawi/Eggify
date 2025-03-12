@@ -33,7 +33,7 @@ h1{
 /*Hiding the timerCountdown*/
 
 #timerContainer{
-    display: none !important;
+    display: none;
     text-align: center;
     font-family: 'Sour Gummy';
 }

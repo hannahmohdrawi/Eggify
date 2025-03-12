@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eggify</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Eggify</h1>
-    <div class="btnContainer mt-5">
-        <div class="row">
-            <button id="boiledBtn" class="col-md-6 grid-item" onclick="showTimer()">
-                <img src="images/boiled.jpg" alt="Boiled Egg">
-                Boiled
-            </button>
-            <button id="scrambledBtn" class="col-md-6 grid-item" onclick="showTimer()">
-                <img src="images/scrambled.webp" alt="Scrambled Egg">
-                Scrambled
-            </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Eggify</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Eggify</h1>
+        <div id="btnContainer" class="container mt-5">
+            <div class="row">
+                <button id="boiledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                    <img src="images/boiled.jpg" alt="Boiled Egg">
+                    Boiled
+                </button>
+                <button id="scrambledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                    <img src="images/scrambled.webp" alt="Scrambled Egg">
+                    Scrambled
+                </button>
+            </div>
+            <div class="row">
+                <button id="poachedBtn"class="col-md-6 grid-item" onclick="showTimer()">
+                    <img src="images/poached.avif" alt="Poached Egg">
+                    Poached
+                </button>
+                <button id="friedBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                    <img src="images/fried.jpg" alt="Fried Egg">
+                    Fried
+                </button>
+            </div>
         </div>
-        <div class="row">
-            <button id="poachedBtn"class="col-md-6 grid-item" onclick="showTimer()">
-                <img src="images/poached.avif" alt="Poached Egg">
-                Poached
-            </button>
-            <button id="friedBtn" class="col-md-6 grid-item" onclick="showTimer()">
-                <img src="images/fried.jpg" alt="Fried Egg">
-                Fried
-            </button>
-        </div>
-    </div>
 
-    <!--Timer Container-->
-    <div id="timerContainer" class="timer">
-        <div class="row">
-            <h2>Time Remaining:</h2>
-            <p id="timerCountdown"></p>
-            <button class="btn btn-primary"><i class="fas fa-rotate-left"></i> Reset</button>
+        <!--Timer Container-->
+        <div id="timerContainer" class="timer">
+            <div class="row">
+                <h2>Time Remaining:</h2>
+                <p id="timerCountdown"></p>
+                <button class="btn btn-primary"><i class="fas fa-rotate-left"></i> Reset</button>
+            </div>
         </div>
-    </div>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
     <script src="index.js"></script>
-
-</body>
+    </body>
 </html>
