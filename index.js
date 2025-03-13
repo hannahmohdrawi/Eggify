@@ -13,11 +13,11 @@ function showTimer(minutes, eggType){
     timerCountdown = document.getElementById("timerCountdown");
 
     clearInterval(timer);
-    let seconds = minutes * 60;
+    let seconds = minutes % 60;
 
     timer = setInterval(() => {
-        let mins = Math.floor(seconds /60);
-        timerCountdown.innerHTML = `Cooking ${eggType}: ${mins}:${seconds}`;
+        let minutes = Math.floor(seconds /60);
+        timerCountdown.innerHTML = `Cooking ${eggType}: ${minutes}:${seconds}`;
 
         if(seconds > 0){
             seconds--;
