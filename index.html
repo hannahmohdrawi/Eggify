@@ -12,21 +12,21 @@
         <h1>Eggify</h1>
         <div id="btnContainer" class="container mt-5">
             <div class="row">
-                <button id="boiledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <button id="boiledBtn" class="col-md-6 grid-item" onclick="showTimer(700, 'Boiled Egg')">
                     <img src="images/boiled.jpg" alt="Boiled Egg">
                     Boiled
                 </button>
-                <button id="scrambledBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <button id="scrambledBtn" class="col-md-6 grid-item" onclick="showTimer(300, 'Scrambled Eggs')">
                     <img src="images/scrambled.webp" alt="Scrambled Egg">
                     Scrambled
                 </button>
             </div>
             <div class="row">
-                <button id="poachedBtn"class="col-md-6 grid-item" onclick="showTimer()">
+                <button id="poachedBtn"class="col-md-6 grid-item" onclick="showTimer(500, 'Poached Egg')">
                     <img src="images/poached.avif" alt="Poached Egg">
                     Poached
                 </button>
-                <button id="friedBtn" class="col-md-6 grid-item" onclick="showTimer()">
+                <button id="friedBtn" class="col-md-6 grid-item" onclick="showTimer(200, 'Fried Egg')">
                     <img src="images/fried.jpg" alt="Fried Egg">
                     Fried
                 </button>
@@ -38,13 +38,13 @@
             <div class="row">
                 <h2>Time Remaining:</h2>
                 <p id="timerCountdown"></p>
-                <button class="btn btn-primary"><i class="fas fa-rotate-left"></i> Reset</button>
+                <button id="resetBtn" class="btn btn-primary" onclick="reset()"><i class="fas fa-rotate-left"></i>Reset</button>
             </div>
         </div>
 
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 
-    <script src="index.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
