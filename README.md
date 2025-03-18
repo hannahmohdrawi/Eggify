@@ -1,4 +1,4 @@
-# Eggify
+# Eggify 🥚
 
 Eggify is a user-friendly web application designed to help users cook eggs in different forms with ease. Whether you want a perfectly boiled, scrambled, poached, or fried egg, Eggify provides timers and recipes to guide you through the process.
 
