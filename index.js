@@ -13,7 +13,7 @@ function showTimer(minutes, eggType){
     timerCountdown = document.getElementById("timerCountdown");
 
     clearInterval(timer);
-    let seconds = minutes % 60;
+    let seconds = minutes % 60; //Convert minutes to seconds
 
     timer = setInterval(() => {
         let minutes = Math.floor(seconds /60);
@@ -23,7 +23,7 @@ function showTimer(minutes, eggType){
             seconds--;
         }else{
             clearInterval(timer);
-            display.innerHTML = `${eggType} is ready! Enjoy!!`
+            timerCountdown.innerHTML = `${eggType} is ready! Enjoy!!`
         }
 
     }, 1000);
