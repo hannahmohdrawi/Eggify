@@ -18,7 +18,7 @@ function showTimer(minutes, eggType){
 
     timer = setInterval(() => {
         let minutes = Math.floor(seconds /60);
-        eggPara.innerHTML = `Cooking ${eggType}:`
+        eggPara.innerHTML = `Cooking ${eggType}`
         timerCountdown.innerHTML = `${minutes}:${seconds}`;
 
 

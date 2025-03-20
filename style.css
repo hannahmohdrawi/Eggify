@@ -11,9 +11,10 @@ h1{
 }
 
 .grid-item {
-    background-color: rgb(241, 209, 104);
-    border: 3px solid #dee2e6;
-    padding: 20px;
+    background-color: rgb(241, 204, 104);
+    border: 3px 3px 3px 3px solid #000000;
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -22,6 +23,10 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.grid-item:hover{
+    background-color: rgb(240, 191, 57);
 }
 
 .grid-item img {
