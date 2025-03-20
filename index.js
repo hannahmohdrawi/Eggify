@@ -11,22 +11,28 @@ function showTimer(minutes, eggType){
     document.getElementById("timerContainer").style.display = "block";
     document.getElementById("btnContainer").style.display = "none";
     timerCountdown = document.getElementById("timerCountdown");
+    eggPara = document.getElementById("cookingEgg");
 
     clearInterval(timer);
     let seconds = minutes % 60; //Convert minutes to seconds
 
     timer = setInterval(() => {
         let minutes = Math.floor(seconds /60);
-        timerCountdown.innerHTML = `Cooking ${eggType}: ${minutes}:${seconds}`;
+        eggPara.innerHTML = `Cooking ${eggType}:`
+        timerCountdown.innerHTML = `${minutes}:${seconds}`;
+
 
         if(seconds > 0){
             seconds--;
         }else{
             clearInterval(timer);
-            timerCountdown.innerHTML = `${eggType} is ready! Enjoy!!`
+            timerCountdown.innerHTML = `${eggType} is ready! Enjoy!!`;
+            timerCountdown.style.color = "cornflowerblue";
+            eggPara.innerHTML = "";
+            timeRemaining.innerHTML = "";
         }
 
-    }, 1000);
+    }, 500);
 }
 
 
