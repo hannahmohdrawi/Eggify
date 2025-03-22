@@ -78,9 +78,23 @@ h1{
 
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 5rem;
+    }
+
     .grid-item {
+        width: 40%; 
         height: 100px;
-        width: 50%;
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .grid-item:nth-child(-n+3) { 
+        margin-bottom: 15px; 
     }
 
     .grid-item img {
@@ -92,6 +106,11 @@ h1{
         width: 40%; /* Button scales down */
         font-size: 0.9rem;
         padding: 8px;
+    }
+
+    #timerCountdown{
+        font-size: 4rem;
+        text-shadow: 2px 3px 5px grey;
     }
 }
 
@@ -119,5 +138,10 @@ h1{
         width: 60%; 
         font-size: 0.8rem;
         padding: 6px;
+    }
+
+    #timerCountdown{
+        font-size: 3rem;
+        text-shadow: 2px 3px 5px grey;
     }
 }
