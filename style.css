@@ -13,9 +13,9 @@ h1{
 
 .grid-item {
     background-color: rgb(241, 204, 104);
-    border: 3px 3px 3px 3px solid #a7a7a7;
+    border: 2px solid #000000; 
     border-radius: 5px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -25,7 +25,6 @@ h1{
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 5px grey;
-    
 }
 
 .grid-item:hover{
@@ -58,7 +57,7 @@ h1{
 #resetBtn{
     text-shadow: 2px 1px grey;
     box-shadow: 2px 2px 5px grey;
-    width: 25%;
+    width: 20%;
     margin: 0 auto;
 }
 
@@ -77,37 +76,48 @@ h1{
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/*Responsive design*/
-
+/* Responsive Design */
 @media only screen and (max-width: 600px) {
-    .grid-item{
+    .grid-item {
         height: 100px;
         width: 50%;
     }
 
-    .grid-item img{
+    .grid-item img {
         padding-top: 10px;
         height: 70px;
     }
+
+    #resetBtn {
+        width: 40%; /* Button scales down */
+        font-size: 0.9rem;
+        padding: 8px;
+    }
 }
 
-
 @media only screen and (max-width: 300px) {
-    h1{
+    h1 {
         font-size: 3rem;
     }
-    .grid-item{
+
+    .grid-item {
+        width: 30%; 
         height: 80px;
-        width: 30%;
-        font-size: 1rem;
+        font-size: 0.75rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
+        padding: 5px;
     }
 
-    .grid-item img{
-        padding-top: 10px;
-        height: 60px;
+    .grid-item:nth-child(-n+3) { 
+        margin-bottom: 15px; 
+    }
+
+    #resetBtn {
+        width: 60%; 
+        font-size: 0.8rem;
+        padding: 6px;
     }
 }
